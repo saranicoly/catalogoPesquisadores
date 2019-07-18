@@ -385,6 +385,7 @@ body {
     font-size: 13px;
     position: relative
 }
+
 .header-top:before, .about-area:before, .newsletter-area:before {
     content: "";
     height: 48px;
@@ -498,6 +499,7 @@ body {
     margin-top: 10px; 
     -webkit-transition: all 0.3s ease 0s; 
     transition: all 0.3s ease 0s;
+
 }
 .header-logo-menu.stick .mainmenu-area .mainmenu ul#nav > li > a {line-height: 96px}
 .header-logo-menu.stick .mainmenu-area {padding: 0; margin: 0;}
@@ -761,7 +763,8 @@ body {
     -webkit-transition: all 0.3s ease 0s;
             transition: all 0.3s ease 0s;
 }
-.search-form button[type="submit"]:hover {color: #2D3E50}
+
+.search-form button[type="submit"]:hover {color: #CA434E}
 .search-menu i#toggle-search {color: #ffffff; font-size: 16px;}
 .header-logo-menu.stick .search {top: 96px}
 /*----------------------------------------*/
@@ -1774,12 +1777,15 @@ body {
     width: 100%;
     font-size: 13px;
 }
+
+/* botão de pesquisa // search button */
 .form-container > button {
-    background: #2d3e50 none repeat scroll 0 0;
+    background: #B84D4D none repeat scroll 0 0;
     border: 0 none;
     color: #ffffff;
     float: right;
     line-height: 42px;
+    width: 190px;
     padding: 0 28px;
     position: relative;
     text-transform: uppercase;
@@ -2436,6 +2442,7 @@ span.c-text {display: inline-block;}
 .text-blue, .header-top span.text-blue {color: #2E3F51}
 .bg-dark {background: #3F5771}
 .bg-white {background: #fff}
+.bg-fundo {background-image: url("./img/course/fundo-header.jpeg")}
 .bg-blue {background: #2E3F51}
 .border-green {
     border-top: 3px solid #86bc42;
