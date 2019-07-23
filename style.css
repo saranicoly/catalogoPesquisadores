@@ -518,7 +518,7 @@ body {
     text-transform: uppercase;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
-    position: relative
+    position: relative;
 }
 .mainmenu ul#nav > li > a:after, .mainmenu ul#nav.menu-white > li > a:after  {
     bottom: 43px;
@@ -2032,6 +2032,11 @@ span.comment-time {padding-right: 3px; position: relative;}
 }
 .single-sidebar-widget .single-item-image img {margin: 0;}
 .single-sidebar-widget .single-item-text > h4 {font-size: 14px;}
+
+.single-sidebar-widget .single-item-text2 > h4 {
+    font-size: 14px;
+    text-transform: uppercase;
+}
 .single-sidebar-widget .single-item-text-info {
     font-size: 12px;
     margin-bottom: 8px;
@@ -2047,14 +2052,14 @@ span.comment-time {padding-right: 3px; position: relative;}
 /*----------------------------------------*/
 .breadcrumb-banner-area {
    /* background: rgba(0, 0, 0, 0) url("img/banner/4.jpg") no-repeat scroll 0 0; */
-    background: rgba(0, 0, 0, 0) url("img/course/fundo_pesquisa.jpeg") no-repeat scroll 0 0;
+    background: url("img/course/fundo_pesquisa.jpeg") no-repeat scroll 0 0;
+    background-size:100% 100%;
     color: #ffffff;
-    padding: 110px 0;
+    padding: 70px 0px;
     position: relative;
 }
-.breadcrumb-banner-area.fixed-bg {background: url("img/slider/3.jpg") no-repeat fixed top center / cover}
-.breadcrumb-banner-area.no-bg {background: rgba(0, 0, 0, 0) none repeat scroll 0 0;}
 .breadcrumb-text {z-index: 9; position: relative;}
+/*
 .breadcrumb-banner-area:after {
     background: rgba(45, 62, 80, 0.8) none repeat scroll 0 0;
     content: "";
@@ -2065,6 +2070,7 @@ span.comment-time {padding-right: 3px; position: relative;}
     width: 100%;
     z-index: 1;
 }
+*/
 .breadcrumb-bar .breadcrumb {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
     line-height: 12px;
@@ -2073,22 +2079,16 @@ span.comment-time {padding-right: 3px; position: relative;}
 }
 .breadcrumb-text h1 {
     line-height: 25px;
-    padding-bottom: 51px;
+    padding-bottom: 20px;
     text-transform: uppercase;
     position: relative;
-    font-size: 36px
+    font-size: 36px;
+    text-shadow: 2px 2px black;
 }
-.breadcrumb-text h1:after {
-    background: #ffffff none repeat scroll 0 0;
-    bottom: 0;
-    content: "";
-    height: 29px;
-    left: 0;
-    margin: auto;
-    position: absolute;
-    right: 0;
-    width: 2px;
+.breadcrumb-text h3 {
+    text-shadow: 2px 2px black;
 }
+
 .breadcrumb-bar li {
     color: #ffffff;
     font-family: "montserratregular";
@@ -2442,7 +2442,14 @@ span.c-text {display: inline-block;}
 .text-blue, .header-top span.text-blue {color: #2E3F51}
 .bg-dark {background: #3F5771}
 .bg-white {background: #fff}
-.bg-fundo {background-image: url("./img/course/fundo-header.jpeg")}
+
+.bg-fundo {
+    background-image: url("./img/course/fundo-header.jpeg");  
+    background-size: auto;
+    background-position: center left;
+
+}
+
 .bg-blue {background: #2E3F51}
 .border-green {
     border-top: 3px solid #86bc42;
