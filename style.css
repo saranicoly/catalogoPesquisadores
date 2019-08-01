@@ -2642,3 +2642,24 @@ span.c-text {display: inline-block;}
 .block.padding .btn-group {margin-bottom: 22px;}
 .btn-toolbar.padding {margin-bottom: 20px;}
 .btn-toolbar.padding:nth-last-of-type(1) {margin-bottom: 0;}
+
+/* outros */
+
+.dados {
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 100px;
+    
+}
+.name {
+    text-transform: uppercase;
+    text-align: center;
+}
+.dados-left {
+    float: left;
+    width: 50%
+}
+.dados-right {
+    float: right;
+    width: 50%
+}
